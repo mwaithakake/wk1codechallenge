@@ -129,13 +129,13 @@ function calculateHousingLevy(grossSalary){
 
 function calculateNetSalary(grossSalary){
   const fullDeductions = calculateMonthlyPaye(grossSalary) + calculateNHIF(grossSalary) + calculateNSSF(grossSalary) + calculateHousingLevy(grossSalary)
-  return grossSalary - fullDeductions
+  return netSalary = grossSalary - fullDeductions
 }
 
 
-console.log (grossSalary)
-console.log (calculateMonthlyPaye(grossSalary))
-console.log (calculateNHIF(grossSalary))
-console.log (calculateNSSF(grossSalary))
-console.log (calculateHousingLevy(grossSalary))
-console.log (calculateNetSalary(grossSalary))
+ console.log ("grossSalary") + console.log  (grossSalary)
+console.log("Payee") + console.log (calculateMonthlyPaye(grossSalary))
+console.log ("NHIF Deductions") + console.log (calculateNHIF(grossSalary))
+console.log("NSSF Deductions") + console.log (calculateNSSF(grossSalary))
+console.log("Housing Levy") + console.log (calculateHousingLevy(grossSalary))
+console.log("NetSalary") + console.log (calculateNetSalary(grossSalary))
